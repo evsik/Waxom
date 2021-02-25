@@ -11,6 +11,7 @@
     <router-view/>
 
     <Footer/>
+    <RunningTitle/>
   </div>
 </template>
 
@@ -18,13 +19,15 @@
 import Header from "./components/Header.vue";
 import Slider from "@/components/Slider";
 import Footer from "@/components/Footer";
+import RunningTitle from "@/components/RunningTitle";
 
 export default {
   name: "App",
   components: {
     Header,
     Slider,
-    Footer
+    Footer,
+    RunningTitle
   },
   updated() {
     this.customStyle()

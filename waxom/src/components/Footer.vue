@@ -116,13 +116,13 @@ footer {
 
   align-items: flex-start;
 
-  //@include media-breakpoint-down(md) {
-  //  @extend .b-servicesBlock;
-  //}
-  //
-  //@include media-breakpoint-down(sm) {
-  //  @extend .b-servicesBlock;
-  //}
+  @include media-breakpoint-down(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .b-aboutWaxomArticle {
