@@ -8,93 +8,7 @@
             Waxom
           </h2>
         </div>
-        <!--        <slot name="nav"></slot>-->
-        <nav class="b-menu" id="nav">
-          <ul class="b-menu__ul">
-            <li class="b-menu__list">
-
-              <router-link class="b-menu__link" to="/">Home</router-link>
-
-            </li>
-            <li class="b-menu__list">
-              <router-link class="b-menu__link" to="/about">About us</router-link>
-            </li>
-            <li class="b-menu__list">
-              <a href="" class="b-menu__link">
-                Portfolio
-              </a>
-            </li>
-            <li class="b-menu__list">
-              <a href="" class="b-menu__link">
-                Features
-              </a>
-            </li>
-            <li class="b-menu__list">
-              <a href="" class="b-menu__link">
-                Blog
-              </a>
-            </li>
-            <li class="b-menu__list">
-              <a href="" class="b-menu__link">
-                Pricing
-              </a>
-            </li>
-            <li class="b-menu__list">
-              <a href="" class="b-menu__link">
-                Shortcodes
-              </a>
-            </li>
-            <li class="b-menu__list">
-              <a href="" class="b-menu__link">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <!--        <nav class="b-menu">-->
-        <!--          <ul class="b-menu__ul">-->
-        <!--            <li class="b-menu__list">-->
-        <!--              <a href="" class="b-menu__link">-->
-        <!--                Home-->
-        <!--              </a>-->
-        <!--            </li>-->
-        <!--            <li class="b-menu__list">-->
-        <!--              <a href="" class="b-menu__link">-->
-        <!--                About Us-->
-        <!--              </a>-->
-        <!--            </li>-->
-        <!--            <li class="b-menu__list">-->
-        <!--              <a href="" class="b-menu__link">-->
-        <!--                Portfolio-->
-        <!--              </a>-->
-        <!--            </li>-->
-        <!--            <li class="b-menu__list">-->
-        <!--              <a href="" class="b-menu__link">-->
-        <!--                Features-->
-        <!--              </a>-->
-        <!--            </li>-->
-        <!--            <li class="b-menu__list">-->
-        <!--              <a href="" class="b-menu__link">-->
-        <!--                Blog-->
-        <!--              </a>-->
-        <!--            </li>-->
-        <!--            <li class="b-menu__list">-->
-        <!--              <a href="" class="b-menu__link">-->
-        <!--                Pricing-->
-        <!--              </a>-->
-        <!--            </li>-->
-        <!--            <li class="b-menu__list">-->
-        <!--              <a href="" class="b-menu__link">-->
-        <!--                Shortcodes-->
-        <!--              </a>-->
-        <!--            </li>-->
-        <!--            <li class="b-menu__list">-->
-        <!--              <a href="" class="b-menu__link">-->
-        <!--                Contact-->
-        <!--              </a>-->
-        <!--            </li>-->
-        <!--          </ul>-->
-        <!--        </nav>-->
+                <slot name="nav"></slot>
       </nav>
     </div>
   </header>
@@ -105,11 +19,6 @@
 export default {
   name: "Header",
 
-  watch: {
-    '$route': function () {
-
-    },
-  }
 }
 
 </script>
@@ -170,47 +79,49 @@ header {
   }
 }
 
-.b-menu {
-  align-self: flex-end;
+//These styles were transferred to App.vue and passed by the slot to this component
 
-  .b-menu__ul {
-    list-style-type: none;
-    display: flex;
-
-    @include media-breakpoint-down(sm) {
-      flex-direction: column;
-    }
-
-    .b-menu__list {
-      margin-right: 30px;
-
-      @include media-breakpoint-down(lg) {
-        margin-right: 15px;
-      }
-
-      .b-menu__link {
-        display: inline-block;
-        color: $varColorWhite;
-        font-family: $varFontFamilyMontserratLight;
-        font-size: 14px;
-        text-decoration: none;
-        transition: 0.6s;
-
-        &:hover {
-          transform: scale(1.1);
-          color: $varColorHover;
-        }
-
-        @include media-breakpoint-down(md) {
-          font-size: 11px;
-        }
-      }
-
-      &:last-of-type {
-        margin-right: 0;
-      }
-    }
-  }
-}
+//.b-menu {
+//  align-self: flex-end;
+//
+//  .b-menu__ul {
+//    list-style-type: none;
+//    display: flex;
+//
+//    @include media-breakpoint-down(sm) {
+//      flex-direction: column;
+//    }
+//
+//    .b-menu__list {
+//      margin-right: 30px;
+//
+//      @include media-breakpoint-down(lg) {
+//        margin-right: 15px;
+//      }
+//
+//      .b-menu__link {
+//        display: inline-block;
+//        color: $varColorWhite;
+//        font-family: $varFontFamilyMontserratLight;
+//        font-size: 14px;
+//        text-decoration: none;
+//        transition: 0.6s;
+//
+//        &:hover {
+//          transform: scale(1.1);
+//          color: $varColorHover;
+//        }
+//
+//        @include media-breakpoint-down(md) {
+//          font-size: 11px;
+//        }
+//      }
+//
+//      &:last-of-type {
+//        margin-right: 0;
+//      }
+//    }
+//  }
+//}
 
 </style>

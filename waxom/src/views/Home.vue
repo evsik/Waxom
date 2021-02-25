@@ -1,14 +1,8 @@
 <template>
   <main>
-    <Slider>
+    <Slider></Slider>
 
-    </Slider>
-
-
-    <ServicesBlock>
-
-    </ServicesBlock>
-
+    <ServicesBlock></ServicesBlock>
   </main>
 </template>
 
