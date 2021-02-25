@@ -1,15 +1,15 @@
 <template>
-  <div>
+  <main>
     <Slider>
 
     </Slider>
 
-    <main>
-      <ServicesBlock>
 
-      </ServicesBlock>
-    </main>
-  </div>
+    <ServicesBlock>
+
+    </ServicesBlock>
+
+  </main>
 </template>
 
 <script>

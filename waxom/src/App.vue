@@ -10,19 +10,21 @@
 
     <router-view/>
 
-    <footer/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header.vue";
 import Slider from "@/components/Slider";
+import Footer from "@/components/Footer";
 
 export default {
   name: "App",
   components: {
     Header,
-    Slider
+    Slider,
+    Footer
   },
   updated() {
     this.customStyle()
